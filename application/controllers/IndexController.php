@@ -5,14 +5,43 @@ class IndexController extends Zend_Controller_Action
 
     public function init()
     {
-        /* Initialize action controller here */
+       $this->initView();
+       $this->view->baseUrl= $this->_request->getBaseUrl();
     }
 
     public function indexAction()
     {
-        // action body
+        
+        $this->view->title = "inicio";
+        $this->view->tipo = '';
+        $this->render();      
+       
+    }
+
+    public function administradorAction()
+    {
+        $form = new Application_Form_Login();
+        $this->view->form = $form;
+    }
+
+    public function comiteAction()
+    {
+        $form = new Application_Form_Login();
+        $this->view->form = $form;
+    }
+
+    public function olimpistaAction()
+    {
+        $form = new Application_Form_Login();
+        $this->view->form = $form;  
     }
 
 
 }
+
+
+
+
+
+
 
