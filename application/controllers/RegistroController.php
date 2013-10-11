@@ -15,12 +15,14 @@ class RegistroController extends Zend_Controller_Action
 
     public function administradorAction()
     {
-        // action body
+        $form = new Application_Form_Administrador();
+        $this->view->form = $form;
     }
 
     public function comiteAction()
     {
-        // action body
+        $form = new Application_Form_Comite();
+        $this->view->form = $form;
     }
 
     public function olimpistaAction()
