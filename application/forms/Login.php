@@ -20,7 +20,7 @@ class Application_Form_Login extends Zend_Form
     	
     	$this->addElement($nombre);
     	$this->addElement($password);
-    	$this->addElement('submit', 'submit', array('ignore' => true, 'label' => 'Registrarse'));
+    	$this->addElement('submit', 'submit', array('ignore' => true, 'label' => 'Ingresar'));
     }
 
 }

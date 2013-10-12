@@ -1,5 +1,7 @@
-<br /><br />
-<div id="view-content">
-	<p>View script for controller <b>Registro</b> and script/action name <b>olimpista</b></p>
+<div>
+		<?php echo $this->partial('header.phtml'); ?>
+		<?php echo $this->partial('menu.phtml'); ?>
          <?php echo $this->form ; ?>
+         <p><a href = "<?php echo $this->baseUrl();?>">cancelar</a></p>
+         <?php echo $this->partial('footer.phtml'); ?>         
 </div>

@@ -29,8 +29,5 @@ class RegistroController extends Zend_Controller_Action
     {
         $form = new Application_Form_Olimpista();
         $this->view->form = $form;
-        
-        
-        
     }
 }
