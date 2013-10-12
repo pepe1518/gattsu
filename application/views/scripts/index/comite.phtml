@@ -1,5 +1,11 @@
-<br /><br />
-<div id="view-content">
-	<p>View script for controller <b>Index</b> and script/action name <b>comite</b></p>
-        <?php echo $this->form ; ?>
+<?php echo $this->partial('header.phtml'); ?>
+<div>
+    <h1>Juez Virtual</h1>
+	<h3><?php //echo $this->escape($this->title); ?></h3>
+		<?php echo $this->partial('menu.phtml'); ?>
+    <div>
+    	<?php echo $this->form ; ?>
+		llenar con un incio presentable
+    </div>
 </div>
+<?php echo $this->partial('footer.phtml'); ?>

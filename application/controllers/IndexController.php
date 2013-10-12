@@ -13,26 +13,30 @@ class IndexController extends Zend_Controller_Action
     {
         
         $this->view->title = "inicio";
-        $this->view->tipo = '';
+        //$this->view->tipo = '';
         $this->render();      
        
     }
 
     public function administradorAction()
     {
-        $form = new Application_Form_Login();
+        $this->view->nombre = "aministrador";
+    	$form = new Application_Form_Login();
         $this->view->form = $form;
+		
     }
 
     public function comiteAction()
     {
+    	$this->view->nombre = "comite";
         $form = new Application_Form_Login();
         $this->view->form = $form;
     }
 
     public function olimpistaAction()
     {
-        $form = new Application_Form_Login();
+        $this->view->nombre = "olimpista";
+    	$form = new Application_Form_Login();
         $this->view->form = $form;  
     }
 
