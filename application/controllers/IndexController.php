@@ -13,6 +13,7 @@ class IndexController extends Zend_Controller_Action
     {
         $this->view->title = "inicio";
         //$this->view->tipo = '';
+        //aumentando lienas de codigo para hacer cosas
         $this->render(); 
     }
 
